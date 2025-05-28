@@ -1,74 +1,83 @@
 # Shape Guilded Bot
+For installation in Visual Studio Code on Windows.
+Follow this for each and every Shape to be deployed.
 
-This is an example of a Guilded bot that integrates with the Shapes API, allowing your Shape to interact with users on Guilded.
+Step 1: Download Node and Git:
+https://nodejs.org/en/download
+https://git-scm.com/downloads/win
 
-## Prerequisites
+Step 2: Visual Studio Permissions:
+To ensure VS Code has full permissions, open the program with ' Right-Click > Run as Administrator '
+Alternatively, type this in the terminal: (edit username to yours)
+icacls "C:\Kuro" /grant:r "%username%:F" /t
 
-- Node.js (v16 or higher recommended)
-- A Guilded account and a bot token. You can create a bot application and get a token from your Guilded server settings.
-- A Shapes API key and the username of your Shape.
+Step 3: Navigate to your Shape's folder:
+cd C:\Kuro
 
-## Setup
+Step 4: Type commands: (One at a time)
+pkg install
+pkg upgrade
+pkg install nodejs
+pkg install git
 
-1.  **Clone or download this example:**
-    If this example is part of a larger repository, navigate to the `shape-guilded` directory. Otherwise, download the files.
+Step 5: Clone this repository:
+git clone https://github.com/DaReamz/Guild.git
 
-2.  **Install dependencies:**
-    Open your terminal in the `shape-guilded` directory and run:
-    ```bash
-    npm install
+Step 6: Navigate to the clone:
+cd Guild
+cd blob     **UPDATE NOTE: (this may be named tree)
+cd main
+
+Step 7: Install Node Package Manager:
+pkg install nmp
+
+Step 8: Install dependencies: (axios, dotenv, guilded.js)
+npm install
+
+Step 9: Copy .env.example:
+cp .env.example kuro.env
+
+Step 10: Edit the `.env` file and fill in your details: (Remember to keep the quotation marks)
     ```
-- [note: do not run `npm audit fix` command after installing dependencies or it will give you errors (do `npm install guilded.js@latest` if it does.)]
-
-3.  **Configure environment variables:**
-    Create a `.env` file in the `shape-guilded` directory by copying the `.env.example` file:
-    ```bash
-    cp .env.example .env
-    ```
-    Edit the `.env` file and fill in your details:
-    ```
-    GUILDED_TOKEN="YOUR_GUILDED_BOT_TOKEN"
-    SHAPES_API_KEY="YOUR_SHAPES_API_KEY"
-    SHAPE_USERNAME="YOUR_SHAPE_USERNAME"
+    GUILDED_TOKEN="GUILDED_BOT_TOKEN"
+    SHAPES_API_KEY="SHAPES_API_KEY"
+    SHAPE_USERNAME="SHAPE_USERNAME"
     ```
     - `GUILDED_TOKEN`: Your Guilded bot's token.
     - `SHAPES_API_KEY`: Your API key for Shapes.
-    - `SHAPE_USERNAME`: The username of your Shape (e.g., `MyCoolShape`, not `shapesinc/MyCoolShape`).
+    - `SHAPE_USERNAME`: The username of your Shape (e.g., `kurowo`, not `shapesinc/kurowo`).
 
-## Running the Bot
+Step 11: Edit the path of your env in index.js:
+Open the index.js file and see Line 4: require("dotenv").config
+Edit the path by renaming to your shape and env file name
+Example: 
+require("dotenv").config( { path: C:\KURO\Guild\blob\main\KURO.env' }' } );
 
-Once configured, you can start the bot using:
+**UPDATE NOTE: 'BLOB' MAY BE NAMED 'TREE'
 
-```bash
+
+Step 12: Start your Shape using:
 npm start
-```
 
-The bot will log in to Guilded and announce its readiness in the console.
+Step 13: Keep Windows and VS Code open at all times.
+You are now hosting your Shape!
 
-## How it Works
+Step 14: Activation
+To start interacting in a specific channel, type `/activate`.
 
--   The bot listens for messages in Guilded channels.
--   **Activation**: To start interacting with the Shape in a specific channel, a user must type `/activate`. The bot will then forward messages from that channel to your configured Shape.
--   **Deactivation**: To stop forwarding messages, a user can type `/deactivate`.
--   **Reset Context**: Typing `/reset` will send a message to the user indicating the context has been reset. This is a signal for the user; the actual context management is handled by the Shapes API based on User ID and Channel ID.
--   When a message is received in an active channel (and it's not a command), the bot prepends the sender's Guilded username to the message and sends it to the Shapes API.
--   The Shape's response is then sent back to the Guilded channel.
--   The bot stores a list of active channels in `active_channels.json` to persist activations across restarts.
+Deactivation: To stop forwarding messages, type `/deactivate`.
+Reset Context: Typing `/reset` will clear the Shape's recent memory.
+
 
 ## Customization
-
--   **Command Prefix**: The default command prefix is `/`. You can change this in `index.js` by modifying the `commandPrefix` variable.
--   **Error Messages & Bot Responses**: Customize the bot's various messages (activation, deactivation, errors, etc.) by modifying the constant message functions at the top of `index.js`.
+-   Command Prefix: The default command prefix is `/`. You can change this in `index.js` by modifying the `commandPrefix` variable.
+-   Error Messages & Bot Responses: Customize the bot's various messages (activation, deactivation, errors, etc.) by modifying the constant message functions at the top of `index.js`.
 
 ## File Structure
-
 -   `index.js`: The main application file containing the bot's logic.
 -   `package.json`: Defines project dependencies and scripts.
 -   `.env.example`: Example environment variable configuration.
 -   `README.md`: This file.
 -   `active_channels.json`: (Generated at runtime) Stores the IDs of channels where the bot is active.
--   `.gitignore`: (Recommended) To exclude `node_modules` and `.env` from version control.
 
-## Contributing
 
-Feel free to adapt or extend this example for your own Shapes!
