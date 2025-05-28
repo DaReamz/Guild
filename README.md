@@ -28,20 +28,25 @@ pkg install git
 
 
 Step 5: Clone this repository:
+
 git clone https://github.com/DaReamz/Guild.git
 
 Step 6: Navigate to the clone:
+
 cd Guild
 cd blob     **UPDATE NOTE: (this may be named tree)
 cd main
 
 Step 7: Install Node Package Manager:
+
 pkg install nmp
 
 Step 8: Install dependencies: (axios, dotenv, guilded.js)
+
 npm install
 
 Step 9: Copy .env.example:
+
 cp .env.example kuro.env
 
 Step 10: Edit the `.env` file and fill in your details: (Remember to keep the quotation marks)
@@ -55,6 +60,7 @@ Step 10: Edit the `.env` file and fill in your details: (Remember to keep the qu
     - `SHAPE_USERNAME`: The username of your Shape (e.g., `kurowo`, not `shapesinc/kurowo`).
 
 Step 11: Edit the path of your env in index.js:
+
 Open the index.js file and see Line 4: require("dotenv").config
 
 Edit the path by renaming to your shape and env file name
@@ -66,6 +72,7 @@ require("dotenv").config( { path: C:\KURO\Guild\blob\main\KURO.env' }' } );
 
 
 Step 12: Start your Shape using:
+
 npm start
 
 Step 13: Keep Windows and VS Code open at all times.
