@@ -17,10 +17,15 @@ Step 3: Navigate to your Shape's folder:
 cd C:\Kuro
 
 Step 4: Type commands: (One at a time)
+
 pkg install
+
 pkg upgrade
+
 pkg install nodejs
+
 pkg install git
+
 
 Step 5: Clone this repository:
 git clone https://github.com/DaReamz/Guild.git
