@@ -40,7 +40,7 @@ Step 9: Copy .env.example:
 cp .env.example kuro.env
 
 Step 10: Edit the `.env` file and fill in your details: (Remember to keep the quotation marks)
-    ```
+
     GUILDED_TOKEN="GUILDED_BOT_TOKEN"
     SHAPES_API_KEY="SHAPES_API_KEY"
     SHAPE_USERNAME="SHAPE_USERNAME"
