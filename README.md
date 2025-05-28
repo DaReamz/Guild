@@ -51,6 +51,7 @@ Step 10: Edit the `.env` file and fill in your details: (Remember to keep the qu
 
 Step 11: Edit the path of your env in index.js:
 Open the index.js file and see Line 4: require("dotenv").config
+
 Edit the path by renaming to your shape and env file name
 Example: 
 require("dotenv").config( { path: C:\KURO\Guild\blob\main\KURO.env' }' } );
