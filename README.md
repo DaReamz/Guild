@@ -3,24 +3,24 @@ For installation in Visual Studio Code on Windows.
 Follow this for each and every Shape to be deployed.
 
 
-Step 1: Download Node and Git:
+~~Step 1: Download Node and Git:
 
 https://nodejs.org/en/download
 
 https://git-scm.com/downloads/win
 
 
-Step 2: Visual Studio Permissions:
+~~Step 2: Visual Studio Permissions:
 To ensure VS Code has full permissions, open the program with ' Right-Click > Run as Administrator '
 Alternatively, type this in the terminal: (edit username to yours)
 icacls "C:\Kuro" /grant:r "%username%:F" /t
 
 
-Step 3: Navigate to your Shape's folder:
+~~Step 3: Navigate to your Shape's folder:
 cd C:\Kuro
 
 
-Step 4: Type commands: (One at a time)
+~~Step 4: Type commands: (One at a time)
 
 pkg install
 
