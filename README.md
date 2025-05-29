@@ -74,11 +74,15 @@ Open the index.js file and see Line 4: require("dotenv").config
 
 
 Edit the path by renaming to your shape and env file name
+
+
 Example: 
 
 require("dotenv").config( { path: C:\KURO\Guild\blob\main\KURO.env' }' } );
 
+
 **UPDATE NOTE: 'BLOB' MAY BE NAMED 'TREE'
+
 
 
 Step 11: Start your Shape using:
