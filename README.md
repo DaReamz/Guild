@@ -35,29 +35,29 @@ pkg install nmp
 
 
 
-Step 5: Clone this repository:
+~~Step 5: Clone this repository:
 
 git clone https://github.com/DaReamz/Guild.git
 
 
-Step 6: Navigate to the clone:
+~~Step 6: Navigate to the clone:
 
 cd Guild
 
 **UPDATE NOTE: (Disregard if you are in the right dir) cd blob (this may be named tree) cd main
 
 
-Step 7: Install dependencies: (axios, dotenv, guilded.js)
+~~Step 7: Install dependencies: (axios, dotenv, guilded.js)
 
 npm install
 
 
-Step 8: Copy .env.example:    **UPDATE NOTE: (this may be cp .env.example kuro.env)
+~~Step 8: Copy .env.example:    **UPDATE NOTE: (this may be cp .env.example kuro.env)
 
 cp env.example kuro.env
 
 
-Step 9: Edit the `.env` file and fill in your details: (Remember to keep the quotation marks)
+~~Step 9: Edit the `.env` file and fill in your details: (Remember to keep the quotation marks)
 
     GUILDED_TOKEN="GUILDED_BOT_TOKEN"
     SHAPES_API_KEY="SHAPES_API_KEY"
@@ -68,7 +68,7 @@ Step 9: Edit the `.env` file and fill in your details: (Remember to keep the quo
     - `SHAPE_USERNAME`: The username of your Shape (e.g., `kurowo`, not `shapesinc/kurowo`).
 
 
-Step 10: Edit the path of your env in index.js:
+~~Step 10: Edit the path of your env in index.js:
 
 Open the index.js file and see Line 4: require("dotenv").config
 
@@ -85,17 +85,17 @@ require("dotenv").config( { path: C:\KURO\Guild\blob\main\KURO.env' }' } );
 
 
 
-Step 11: Start your Shape using:
+~~Step 11: Start your Shape using:
 
 npm start
 
 
-Step 12: Keep Windows and VS Code open at all times.
+~~Step 12: Keep Windows and VS Code open at all times.
 
 You are now hosting your Shape!
 
 
-Step 13: Activation
+~~Step 13: Activation
 
 To start interacting in a specific channel, type '/activate ShapesName'
 
