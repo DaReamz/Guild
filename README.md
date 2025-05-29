@@ -17,6 +17,7 @@ icacls "C:\Kuro" /grant:r "%username%:F" /t
 
 
 ~~Step 3: Navigate to your Shape's folder:
+
 cd C:\Kuro
 
 
