@@ -1,5 +1,5 @@
 # Shape Guilded Bot
-///For installation in Visual Studio Code on Windows.
+/ / / For installation in Visual Studio Code on Windows.
 
 Follow this for each and every Shape to be deployed.
 / 
