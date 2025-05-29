@@ -91,14 +91,17 @@ npm start
 
 
 Step 12: Keep Windows and VS Code open at all times.
+
 You are now hosting your Shape!
 
 
 Step 13: Activation
+
 To start interacting in a specific channel, type '/activate ShapesName'
 
 
 Deactivation: To stop forwarding messages, type '/deactivate ShapesName'.
+
 Reset Context: Typing `/reset` will clear the Shape's recent memory.
 
 
