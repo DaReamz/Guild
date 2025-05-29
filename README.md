@@ -53,9 +53,9 @@ Step 8: Install dependencies: (axios, dotenv, guilded.js)
 npm install
 
 
-Step 9: Copy .env.example:
+Step 9: Copy .env.example:    **UPDATE NOTE: (this may be cp .env.example kuro.env)
 
-cp .env.example kuro.env
+cp env.example kuro.env
 
 
 Step 10: Edit the `.env` file and fill in your details: (Remember to keep the quotation marks)
