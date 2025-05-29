@@ -11,6 +11,7 @@ https://git-scm.com/downloads/win
 
 
 ~~Step 2: Visual Studio Permissions:
+
 To ensure VS Code has full permissions, open the program with ' Right-Click > Run as Administrator '
 Alternatively, type this in the terminal: (edit username to yours)
 icacls "C:\Kuro" /grant:r "%username%:F" /t
