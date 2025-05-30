@@ -1,4 +1,12 @@
 # Shape Guilded Bot
+
+An updated version of https://github.com/shapesinc/shapes-api/tree/main/examples/social/shape-guilded
+
+*Updated to allow multiple Shapes in one channel without them responding to each other in a loop.
+
+*Updated image preview links.
+
+
 / / / For installation in Visual Studio Code on Windows.
 
 Follow this for each and every Shape to be deployed.
