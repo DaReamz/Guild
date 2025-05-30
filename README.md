@@ -70,7 +70,7 @@ cd Guild
 npm install
 
 
-~~Step 8: Copy env.example to SHAPE.env
+~~Step 8: Copy env.example to Your-Shape.env
 
 cp env.example kuro.env
 
