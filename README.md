@@ -7,11 +7,14 @@ An updated version of https://github.com/shapesinc/shapes-api/tree/main/examples
 *Updated image preview links.
 
 
+
 / / / Installation Guide for Visual Studio Code.
+
 
 Follow this for each and every Shape to be deployed.
 / 
 / 
+
 (Can optionally be deployed on a Virtual Machine such as Google Cloud or Oracle)
 / 
 
