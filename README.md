@@ -36,7 +36,7 @@ pkg install nodejs
 
 pkg install git
 
-pkg install nmp
+pkg install npm
 
 
 
