@@ -70,7 +70,7 @@ cd Guild
 npm install
 
 
-~~Step 8: Copy .env.example:    **UPDATE NOTE: (this may be cp .env.example kuro.env)
+~~Step 8: Copy env.example to SHAPE.env
 
 cp env.example kuro.env
 
@@ -96,10 +96,8 @@ Edit the path by renaming to your shape and env file name
 
 Example: 
 
-require("dotenv").config( { path: C:\KURO\Guild\blob\main\KURO.env' }' } );
+require("dotenv").config( { path: C:\KURO\Guild\tree\main\KURO.env' }' } );
 
-
-**UPDATE NOTE: 'BLOB' MAY BE NAMED 'TREE'
 
 
 
